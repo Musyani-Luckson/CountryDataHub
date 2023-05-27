@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>CountryProfiler</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-dark text-light">
+  <div class="countriesDisplayDiv" id="landingPagecountries">
+  </div>
+
+  <div class="filterDiv text-dark">
+    <div class="filterForms">
+      <div class="form-floating mt-3 mb-3">
+        <input type="text" class="form-control" id="country" placeholder="country" name="country" />
+        <label for="country">
+          Search a country...
+        </label>
+      </div>
+      <div class="form-floating selectDivFilter">
+        <select class="form-select" id="zoned" name="sellist">
+        </select>
+        <label for="zoned" class="form-label" id="zonedLabel">
+        </label>
+      </div>
+      <div class="form-floating selectDivFilter">
+        <select class="form-select" id="zone" name="sellist">
+        </select>
+        <label for="zone" class="form-label">
+          Zone
+        </label>
+      </div>
+    </div>
+  </div>
+  <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-start my-custom-class" tabindex="-1" id="demo" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body bg-dark">
+      <div class="offcanvasUpper" id="offcanvasUpper">
+      </div>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="brandName"></a>
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="offcanvas">
+            Home
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav" id="navUl">
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="groupedDetailsDiv" id="groupedDetailsDiv">
+      </div>
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
