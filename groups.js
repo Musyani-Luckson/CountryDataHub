@@ -1,4 +1,4 @@
-import { hp } from "./helper/lib.js";
+import { hp } from "./lib.js";
 import { InnerGroups } from "./innerGroups.js";
 
 const innerGroups = new InnerGroups()
