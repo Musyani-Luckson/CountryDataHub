@@ -1,4 +1,4 @@
-import { hp } from "./helper/lib.js";
+import { hp } from "./lib.js";
 import { Countries } from './Countries.js';
 import { FullCountry } from './fullCountry.js';
 import { Groups } from './groups.js';
